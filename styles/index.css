@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 10%;
+    padding: 5% 0;
 }
 .header-menu span{
     color: #D2872C;
@@ -15,4 +15,38 @@
     padding: 0 10px;
     font-size: 1.2em;
     color: #766F68;
+}
+.principal{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+}
+.principal .texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 99;
+    color: #766F68;
+}
+.texts h1{
+    font-weight: 700;
+    font-size: 3em;
+}
+.texts span{
+    padding: 1.1em 0;
+    font-size: 1.5em;
+    line-height: 22px;
+}
+.texts button{
+    background-color: #D2872C;
+    border: 0;
+    color: #FFF;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 2em;
+    margin-right: 30%;
+}
+.image img{
+    width: 100%;
 }
