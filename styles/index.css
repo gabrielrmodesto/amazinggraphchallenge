@@ -1,6 +1,18 @@
 .header-menu{
     display: flex;
-}
-.header-menu div{
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10%;
+}
+.header-menu span{
+    color: #D2872C;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.header-menu ul li{
+    padding: 0 10px;
+    font-size: 1.2em;
+    color: #766F68;
 }
