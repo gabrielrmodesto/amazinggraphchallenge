@@ -1,52 +1,81 @@
-.header-menu{
+.header-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 5% 0;
 }
-.header-menu span{
-    color: #D2872C;
+.header-menu span {
+    color: #d2872c;
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 2px;
 }
-.header-menu ul li{
+.header-menu ul li {
     padding: 0 10px;
     font-size: 1.2em;
-    color: #766F68;
+    color: #766f68;
 }
-.principal{
+.principal {
     display: grid;
     grid-template-columns: 2fr 3fr;
     align-items: center;
 }
-.principal .texts{
+.principal .texts {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     z-index: 99;
-    color: #766F68;
+    color: #766f68;
 }
-.texts h1{
+.texts h1 {
     font-weight: 700;
     font-size: 3em;
 }
-.texts span{
+.texts span {
     padding: 1.1em 0;
     font-size: 1.5em;
     line-height: 22px;
 }
-.texts button{
-    background-color: #D2872C;
+.texts button {
+    background-color: #d2872c;
     border: 0;
-    color: #FFF;
+    color: #fff;
     padding: 10px 0;
     border-radius: 10px;
     font-weight: 700;
     font-size: 2em;
     margin-right: 30%;
 }
-.image img{
+.image img {
     width: 100%;
+}
+@media (max-width: 900px) {
+    .header-menu div ul::after{
+        content: "\2630";
+        font-size: 1.8em;
+    }
+    .header-menu div ul li{
+        display: none;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .texts{
+        text-align: center;
+    }
+    .texts h1{
+        font-size: 2.3em;
+    }
+    .texts span{
+        font-size: 1.2em;
+    }
+    .texts button {
+        padding: 10px 0;
+        font-weight: 500;
+        font-size: 1.5em;
+        margin: 0 15%;
+    }
 }
